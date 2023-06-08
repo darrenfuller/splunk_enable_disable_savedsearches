@@ -13,9 +13,10 @@
 splunk_enable_disable_saved_searches.py is a script written to disable all reports (saved searches) in a Splunk environment that are both enabled and have an active schedule and then later, use the output from the first run to reenable those searches at a later time.   This is useful for migrations to new Splunk environments where the ask is to get a large number of saved searches loaded in advance, but not have them actively run before the scheduled cutover.   This could also be useful for setting up active / passive search heads.
 
 Note:  There are three runtypes available, 
-    listonly -- A dry run of the application that builds the csv output to the file identified as --csvlist, but won't actually do any disabling
-    disable  -- Runs through all apps in the Splunk environment, loops through each search that is_scheduled=1 and disabled=0, and disables them, logging its work to the file located as --csvlist
-    enable   -- Takes --csvlist as an input, which is the output file from a previous run of the tool in disable mode and enables each of the reports identified in the file
+
+   - listonly -- A dry run of the application that builds the csv output to the file identified as --csvlist, but won't actually do any disabling
+   - disable  -- Runs through all apps in the Splunk environment, loops through each search that is_scheduled=1 and disabled=0, and disables them, logging its work to the file located as --csvlist
+   - enable   -- Takes --csvlist as an input, which is the output file from a previous run of the tool in disable mode and enables each of the reports identified in the file
 
 # -------------------------------------------------------------------------------
 
