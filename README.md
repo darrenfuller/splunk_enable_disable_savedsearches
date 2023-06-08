@@ -48,7 +48,7 @@ If the run type is reenable, then this points to a list of searches that were pr
 ###### -i, --ignoreapps   [ app1,app2,...,appX ] 
 Comma separated list of applications that will be ignored.   Searches in this list will not be included on the csv or disabled / enabled.     
 
-# -------------------------------------------------------------------------------
+
 
 ## Examples
 
@@ -64,10 +64,8 @@ Comma separated list of applications that will be ignored.   Searches in this li
 ./splunk_bulk_report_enable_disable.py -r listonly -s https://splunkinstance.splunkcloud.com:8089 -u username
 
 ```
-# -------------------------------------------------------------------------------
+
 
 ## Known issues
 
 I have noticed that a small percentage of reports fail to disable and I am as yet unsure why.    These will be noted in the csvlist file with a status of "FAILED" and will need to be disabled manually.
-
-
